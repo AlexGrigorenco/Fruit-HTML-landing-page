@@ -2,18 +2,12 @@ const mobileBTN = document.querySelector('.menu-icon-wrapper');
 const menu = document.querySelector('.menu__wrapper');
 const body = document.querySelector('body')
 
-
-
-const menuLinks = menu.querySelectorAll('a')
-const menuBttn = menu.querySelectorAll('button')
-const menuClickObject = [...menuLinks, ...menuBttn]
-
-console.log(menuClickObject)
+const menuClickObjects = [...menu.querySelectorAll('a'), ...menu.querySelectorAll('button')]
 
 mobileBTN.onclick = function(){
   toggleMenu()
 
-  menuClickObject.forEach(elem => {
+  menuClickObjects.forEach(elem => {
     elem.addEventListener('click', () => {
       
       document.querySelector('.menu__wrapper__mobile') ? toggleMenu() : null
