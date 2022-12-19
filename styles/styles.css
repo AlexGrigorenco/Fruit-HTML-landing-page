@@ -867,6 +867,7 @@ color: #243165;
 
 
 .menu-icon-wrapper {
+  cursor: pointer;
     width: 30px;
     height: 30px;
     display: none;
