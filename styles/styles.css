@@ -47,6 +47,7 @@
 
 html{
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -460,35 +461,6 @@ line-height: 170%;
 letter-spacing: 0.01em;
 
 color: rgba(2, 40, 63, 0.67);
-}
-.icon__basket--instruction{ 
-    position: relative;
-    width: 20px;
-    height: 20px;
-  
-}
-.icon__basket--instruction img{
- height: 70%;
-}
-.icon__basket--instruction::before {
-  content: "";
-  position: absolute;
-  bottom: 1px;
-  left: 6px;
-  width: 3px;
-  height: 3px;
-  border-radius: 50%;
-  background-image: url(./../images/instruction/icon-whell.png);
-}
-.icon__basket--instruction::after {
-  content: "";
-  position: absolute;
-  bottom: 1px;
-  right: 2px;
-  width: 3px;
-  height: 3px;
-  background-image: url(./../images/instruction/icon-whell.png);
-  border-radius: 50%;
 }
 
 
@@ -1278,7 +1250,7 @@ h2{
 .block__loyout {
   display: block;
   background-color: white;
-  padding: 20px;
+  padding: 20px 20px 60px 20px;
   
   text-align: center;
 }
